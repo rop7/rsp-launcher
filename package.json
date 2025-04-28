@@ -1,0 +1,57 @@
+{
+  "name": "rsp-android-launcher",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite",
+    "dev:open": "vite & npm run open",
+    "open": "chromium http://localhost:5173"
+  },
+  "main": "src/main.js",
+  "dependencies": {
+    "@bridgelauncher/api": "^0.1.0",
+    "@bridgelauncher/api-mock": "^0.1.0",
+    "@mdi/font": "^7.4.47",
+    "core-js": "^3.8.3",
+    "pinia": "^3.0.1",
+    "roboto-fontface": "*",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.7.0-beta.1",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vitejs/plugin-vue": "^5.2.2",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vite": "^6.2.2",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "type": "module"
+}
